@@ -10,7 +10,7 @@ public class SafeCalculator {
     public func add(_ a: Int, _ b: Int) -> Int {
         let authorized = authorizer.authorize()
 
-        if authorized { // <- bug here, should be if (!authorized)
+        if authorized { // <- bug here, should be if (!authorizedk
             fatalError("Not authorized.")
         }
 

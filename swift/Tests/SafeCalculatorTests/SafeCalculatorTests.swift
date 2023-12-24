@@ -6,6 +6,8 @@ final class SafeCalculatorTests: XCTestCase {
         XCTAssertTrue(true)
     }
 
+    func test_shouldFail() {}
+
     // MARK: - Helpers
 
     private func makeSUT() -> SafeCalculator {
